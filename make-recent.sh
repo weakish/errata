@@ -6,5 +6,6 @@
 #     under wiki directory
 #     ./make-recent.sh
 
-ls -t isbn | sed -e 's/^/\[\[isbn\//' | sed -e 's/$/\]\]/' > Recent.wiki
-ls -t SH | sed -e 's/^/\[\[SH\//' | sed -e 's/$/\]\]/' >> Recent.wiki
+ls -t isbn | sed -e 's/^/\[\[/' | sed -e 's/\.md$/\]\]/' > Recent.md
+ls -t SH | sed -e 's/^/\[\[/' | sed -e 's/\.md$/\]\]/' >> Recent.md
+
